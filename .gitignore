@@ -1,0 +1,11 @@
+# training Log file
+log/
+
+# my train set
+data/my_train_set/
+
+# model
+model/
+
+# etc
+etc/
