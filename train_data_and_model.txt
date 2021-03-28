@@ -1,0 +1,9 @@
+딥러닝 트레이닝용 데이터 생성하고 훈련하기
+
+1. 데이터 준비 -> 차선이 포함되어 있고 1280*720 해상도, jpg혹은 png형식을 가지는 이미지 파일들 준비
+2. labelme를 이용하여(line strip 사용) 차선데이터 레이블링 하고 데이터를 json형식의 파일로 저장 (각 이미지와 json파일을 하나의 폴더에 저장)
+3. tools/gen_training_data.py를 실행하여 트레이닝용 데이터 생성
+4. tools/make_tusimple_tfrecods.py 실행하여 생성한 트레이닝 데이터를 딥러닝으로 훈련시키기 용이한 tfrecod 파일로 변환
+5. tools/train_lanenet_tusimple.py 파일 이용하여 모델 학습(기존모델에 추가하여 학습 가능, 훈련된 가중치 파일은 model폴더 아래에 지정한 이름으로 생성)
+
+* 훈련시 GPU 메모리 부족하여 훈련 중단될 경우 config/tusimple_lanenet.yaml의 TRAIN:BATCH_SIZE와 GPU:GPU_MEMORY_FRACTION조정하여 VRAM 할당량 조정
