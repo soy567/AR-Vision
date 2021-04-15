@@ -8,5 +8,5 @@ Jetson Xavier NX<br>
 RPLiDAR A2M8<br>
 
 <strong>SW 환경</strong><br>
-차선인식 모델 - LANENET(https://github.com/MaybeShewill-CV/lanenet-lane-detection) 사용
+차선인식 모델 - LANENET(https://github.com/MaybeShewill-CV/lanenet-lane-detection) 사용<br>
 OS - Ubuntu 18.04<br>
